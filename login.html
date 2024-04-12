@@ -33,7 +33,7 @@
         <div class="container" id="container">
             <div class="form-container sign-up">
 
-                <form>
+                <form action="cadastro.php" method="post" name="cadastro">
 
 
                     <h1 id="logar"> Cadastrar-se </h1>
@@ -44,20 +44,20 @@
                     <input type="text" placeholder="CPF" id="cpf" name="cpf" maxlength="14" oninput="formatarCPF(this)"
                         required>
 
-                    <input type="password" placeholder="Crie uma senha" id="senha" name="senha" minlength="16"
-                        maxlength="16" required>
-                        
+                    <input type="password" placeholder="Crie uma senha" id="senha" name="senha" required>
+
                     <input type="password" placeholder="Confirmar senha">
-                    <span id="erro-senha" style="display: none; color: red;">A senha deve conter 16
-                        caracteres.</span>
+                    <!-- <span id="erro-senha" style="display: none; color: red;">A senha deve conter 16 -->
+                    caracteres.</span>
 
                     <button>Cadastrar-se </button>
                 </form>
+
             </div>
 
             <div class="form-container sign-in">
 
-                <form>
+                <form action="login.php" method="post" name="login">
 
                     <h1 id="logar2">Faça seu Login</h1>
 
@@ -98,7 +98,5 @@
             <img src="complements/images/3.png" alt="logotipo do site" id="logologin">
         </article>
 
-
-</body>
 
 </html>
